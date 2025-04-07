@@ -1,0 +1,144 @@
+/* Container chính */
+.info-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.info-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.info-header h1 {
+  color: #333;
+  font-size: 2rem;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #eee;
+}
+
+/* Grid layout */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Section */
+.info-section {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.info-section h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin: 0 0 1.5rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+/* .form-input:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+} */
+
+.form-input.error {
+  border-color: #dc3545;
+}
+
+.form-input.error:focus {
+  box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.2);
+}
+
+/* Error messages */
+.error-message {
+  display: block;
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Submit button */
+.form-actions {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.btn-submit {
+  background-color: var(--color-admin);
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #218838;
+}
+
+.btn-submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-container {
+    margin: 1rem auto;
+  }
+
+  .info-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .info-section {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-input {
+    padding: 0.5rem;
+  }
+
+  .btn-submit {
+    width: 100%;
+    padding: 0.75rem;
+  }
+}
